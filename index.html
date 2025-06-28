@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>palastin</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        body {
+            background-color: #ffffff;
+            direction: rtl;
+            font-family: sans-serif;
+
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 50px;
+            border: 4px solid rgb(255, 255, 255);
+
+
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+            color: rgb(6, 3, 3);
+        }
+
+        nav a {
+            color: rgb(37, 9, 9);
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 15px;
+
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+
+            max-width: 80%;
+
+            margin: auto;
+            padding: 15px;
+
+            border: 2px solid rgb(255, 255, 255);
+        }
+
+
+        .img-aqsa {
+            width: 100%;
+            height: 600px;
+            display: block;
+            border-radius: 50px;
+        }
+
+        .imge2 {
+
+            width: 50%;
+            height: 600px;
+            display: block;
+            padding: 20px 0px;
+            border-radius: 50px;
+
+        }
+
+        .par2 {
+
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            direction: rtl;
+
+        }
+
+        .text-box {
+            padding-top: 20px;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #222;
+            max-width: 50%;
+
+        }
+
+
+
+        .img3 {
+            width: 100%;
+            height: 600px;
+            display: block;
+            border-radius: 50px;
+        }
+
+        .para2 {
+
+            text-align: center;
+
+        }
+
+        .img-overlay {
+            position: relative;
+        }
+
+        .text-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .text-btn h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .text-btn button {
+            padding: 12px 25px;
+            background-color: red;
+            color: rgb(255, 255, 255);
+            border: none;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .text-btn button:hover {
+            background-color: darkred;
+        }
+
+
+        h1 {
+            color: #6e1f1f;
+        }
+
+        .products {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+
+
+        }
+
+        .card {
+            background-color: rgb(233, 221, 221);
+            width: 250px;
+            padding: 15px;
+            border: 2px solid #fff4f4;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(235, 32, 32, 0.1);
+
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .card h2 {
+            color: #f60404;
+            margin: 10px auto 5px 10px;
+            display: block;
+            text-align: center;
+
+
+        }
+
+        .card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .butt2 {
+            padding: 12px 25px;
+            background-color: rgb(171, 29, 29);
+            color: rgb(255, 255, 255);
+            border: none;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            text-align: center;
+            padding: 10px;
+
+        }
+
+        .footer {
+            background-color: #222;
+            color: #fff;
+            padding: 40px 20px;
+            direction: rtl;
+            font-family: 'Cairo', sans-serif;
+            border-radius: 20px;
+        }
+
+        .footer-container {
+            display: flex;
+
+        }
+
+        .footer-section {
+            flex: 1 1 250px;
+        }
+
+        .footer-section h3 {
+            color: #f60404;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+
+        .footer-section p,
+        .footer-section ul {
+            margin: 8px 0;
+            font-size: 16px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section ul li a:hover {
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>فلسطين</h1>
+
+            <nav>
+                <a href="#">الرئيسية</a>
+                <a href="#">عن فلسطين</a>
+                <a href="#">معالم</a>
+                <a href="#">التبرع</a>
+                <a href="#">تواصل معنا</a>
+            </nav>
+        </header>
+        <img class="img-aqsa" src="aqsa4.jpg" alt="صورة">
+
+        <div class="par2">
+            <img class="imge2" src="aqsa2.jpg" alt="صورة">
+
+
+            <div class="container">
+                <div class="text">
+                    <h3>المسجد الأقصى قلب القدس النابض</h3>
+                    <p>القدس الشريف
+                        يقع المسجد الأقصى في قلب مدينة القدس الشريف، ويشمل عدة
+                    </p>
+
+                    <p>معالم دينية منها:
+                        قبة الصخرة المشرفة، المسجد القبلي، المصلى المرواني،
+                    </p>
+                    <p> مسجد البراق، مسجد النساء، باب المغاربة، باب
+                        السلسلة، وباب المطهرة.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="par3">
+            <div class="img-overlay">
+                <img class="img3" src="aqsa.jpg" alt="صورة للمسجد الأقصى">
+                <div class="text-btn">
+                    <h2 class="ssss">فلسطين في القلب</h2>
+                    <button>اعرف المزيد</button>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div>
+            <h1 style="padding: 20px;" class="para2">منتجات مقاطعة</h1>
+        </div>
+
+
+
+        <div class="products">
+            <div class="card">
+                <img src="coca.jpg" alt="صورة المنتج الأول">
+                <div>
+                    <h2 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" class="h222">
+                        cocacola</h2>
+                </div>
+                <p>هذا المنتج ضمن القائمة السوداء.</p>
+                <button class="butt2" style="display: block; margin: 10px auto;">مشاهدة التفاصيل </button>
+            </div>
+            <div class="card">
+                <img src="nes.jpg" alt="صورة المنتج الثاني">
+                <h2>nesquik</h2>
+                <p>تم التأكيد على ضرورة مقاطعته.</p>
+                <button class="butt2" style="display: block; margin: 10px auto;">مشاهدة التفاصيل </button>
+            </div>
+            <div class="card">
+                <img src="mcdo.jpg" alt="صورة المنتج الثالث">
+                <h2>mcdonalds</h2>
+                <p class="أحد المنتجات">أحد المنتجات التي تم الاستغناء عنها.</p>
+                <button class="butt2" style="display: block; margin: 10px auto;">مشاهدة التفاصيل </button>
+            </div>
+
+        </div>
+
+
+
+        <footer class="footer">
+            <div class="footer-container">
+
+
+
+                <div class="footer-section">
+                    <h3>فلسطين</h3>
+                    <p>موقع تعليمي للتعريف بفلسطين وقضيتها</p>
+                </div>
+
+
+
+
+
+                <div class="footer-section">
+                    <h3>تواصل معنا</h3>
+                    <p> البريد الإلكتروني: info@palestine-nafa.org</p>
+                    <p> الهاتف: 4569 123 2970</p>
+                    <p> فيسبوك - انستغرام - تويتر</p>
+                    
+                </div>
+
+
+
+
+                <div class="footer-section">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="#">الرئيسية</a></li>
+                        <li><a href="#">عن فلسطين</a></li>
+                        <li><a href="#">المعالم</a></li>
+                        <li><a href="#">تواصل معنا</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
+</div>
+</div>
+</body>
+
+</html>
